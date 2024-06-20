@@ -34,8 +34,11 @@ the magic unfold.
 This project was bootstrapped with
 [![Node.js](https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/express-%23404d59.svg?style=for-the-badge)](https://expressjs.com/)
+[![Mongoose](https://img.shields.io/badge/mongoose-%23880000.svg?style=for-the-badge&logo=mongoose)](https://mongoosejs.com/)
+[![MongoDB](https://img.shields.io/badge/mongodb-%234ea94b.svg?style=for-the-badge&logo=mongodb)](https://www.mongodb.com/)
+[![Render](https://img.shields.io/badge/render-%2355c1e9.svg?style=for-the-badge&logo=render)](https://render.com/)
+
 [![Postman](https://img.shields.io/badge/postman-%23FF6C37.svg?style=for-the-badge&logo=postman&logoColor=white)](https://www.postman.com/)
-[![Joi](https://img.shields.io/badge/joi-%23F0DB4F.svg?style=for-the-badge)](https://joi.dev/)
 [![Swagger](https://img.shields.io/badge/swagger-%2385EA2D.svg?style=for-the-badge&logo=swagger&logoColor=black)](https://swagger.io/)
 
 # Support
