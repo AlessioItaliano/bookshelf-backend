@@ -1,0 +1,161 @@
+[
+  {
+    "title": "Unlocking Android",
+    "pageCount": 416,
+    "publishedDate": {
+      "date": "2009-04-01T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg",
+    "shortDescription": "Unlocking Android: A Developer's Guide",
+    "longDescription": "Android is an open source mobile phone platform based OS...",
+    "status": "PUBLISH",
+    "authors": ["W. Frank Ableson", "Charlie Collins", "Robi Sen"]
+  },
+  {
+    "title": "Clean Code",
+    "pageCount": 464,
+    "publishedDate": {
+      "date": "2008-08-11T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://m.media-amazon.com/images/I/51E2055ZGUL._SY522_.jpg",
+    "shortDescription": "Clean Code: A Handbook of Agile Software Craftsmanship",
+    "longDescription": "Even bad code can function. But if code isn't clean, it can bring a development organization to its knees.",
+    "status": "DRAFT",
+    "authors": ["Robert C. Martin"]
+  },
+  {
+    "title": "JavaScript: The Good Parts",
+    "pageCount": 176,
+    "publishedDate": {
+      "date": "2008-05-01T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://m.media-amazon.com/images/I/7185IMvz88L._AC_UY436_FMwebp_QL65_.jpg",
+    "shortDescription": "JavaScript: The Good Parts",
+    "longDescription": "JavaScript is a powerful programming language that has become the de facto language of the web.",
+    "status": "PUBLISH",
+    "authors": ["Douglas Crockford"]
+  },
+  {
+    "title": "The Pragmatic Programmer",
+    "pageCount": 352,
+    "publishedDate": {
+      "date": "1999-10-30T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://m.media-amazon.com/images/I/61ztlXgCmpL._AC_UY436_FMwebp_QL65_.jpg",
+    "shortDescription": "The Pragmatic Programmer: Your Journey To Mastery",
+    "longDescription": "The Pragmatic Programmer cuts through the increasing specialization and technicalities of modern software development to examine the core process — taking a requirement and producing working, maintainable code that delights its users.",
+    "status": "PUBLISH",
+    "authors": ["Andrew Hunt", "David Thomas"]
+  },
+  {
+    "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+    "pageCount": 416,
+    "publishedDate": {
+      "date": "1994-10-31T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://m.media-amazon.com/images/I/81gtKoapHFL._AC_UY436_FMwebp_QL65_.jpg",
+    "shortDescription": "Design Patterns: Elements of Reusable Object-Oriented Software",
+    "longDescription": "Design Patterns is a modern classic in the literature of object-oriented development, offering timeless and elegant solutions to common problems in software design.",
+    "status": "REMOVED",
+    "authors": [
+      "Erich Gamma",
+      "Richard Helm",
+      "Ralph Johnson",
+      "John Vlissides"
+    ]
+  },
+  {
+    "title": "The Mythical Man-Month: Essays on Software Engineering",
+    "pageCount": 336,
+    "publishedDate": {
+      "date": "1975-01-01T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://m.media-amazon.com/images/I/71fCJWIx4UL._AC_UY436_FMwebp_QL65_.jpg",
+    "shortDescription": "The Mythical Man-Month: Essays on Software Engineering",
+    "longDescription": "The Mythical Man-Month is a classic book on the software project management, written by Fred Brooks. The book presents his personal view of managing software projects based on his experiences at IBM.",
+    "status": "PUBLISH",
+    "authors": ["Frederick P. Brooks Jr."]
+  },
+  {
+    "title": "Refactoring: Improving the Design of Existing Code",
+    "pageCount": 448,
+    "publishedDate": {
+      "date": "1999-06-18T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://m.media-amazon.com/images/I/41JgRyJbGSL._SX342_SY445_.jpg",
+    "shortDescription": "Refactoring: Improving the Design of Existing Code",
+    "longDescription": "Refactoring is a controlled technique for improving the design of an existing code base. Its essence is applying a series of small behavior-preserving transformations",
+    "status": "PUBLISH",
+    "authors": ["Martin Fowler", "Kent Beck"]
+  },
+  {
+    "title": "Domain-Driven Design: Tackling Complexity in the Heart of Software",
+    "pageCount": 560,
+    "publishedDate": {
+      "date": "2003-08-30T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://m.media-amazon.com/images/I/41ni9tGguyL._SY445_SX342_.jpg",
+    "shortDescription": "Domain-Driven Design: Tackling Complexity in the Heart of Software",
+    "longDescription": "Domain-Driven Design (DDD) is an approach to software development for complex needs by connecting the implementation to an evolving model. The premise of Domain-Driven Design is the following: placing the project's primary focus on the core domain and domain logic. ",
+    "status": "REMOVED",
+    "authors": ["Eric Evans"]
+  },
+  {
+    "title": "Head First Design Patterns",
+    "pageCount": 694,
+    "publishedDate": {
+      "date": "2004-10-01T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://m.media-amazon.com/images/I/91quawUTiVL._SY522_.jpg",
+    "shortDescription": "Head First Design Patterns",
+    "longDescription": "Head First Design Patterns is a book that teaches you design patterns in a way that is engaging, memorable, and useful to you as a software developer. It introduces the key design patterns in a way that is both easy to understand and memorable.",
+    "status": "PUBLISH",
+    "authors": [
+      "Elisabeth Robson",
+      "Eric Freeman",
+      "Bert Bates",
+      "Kathy Sierra"
+    ]
+  },
+  {
+    "title": "Code Complete: A Practical Handbook of Software Construction",
+    "pageCount": 960,
+    "publishedDate": {
+      "date": "1993-06-09T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://m.media-amazon.com/images/I/51NdrckQMDL._SX342_SY445_.jpg",
+    "shortDescription": "Code Complete: A Practical Handbook of Software Construction",
+    "longDescription": "Code Complete is a comprehensive guide to software construction that includes in-depth advice on everything from project design, construction, and debugging to testing and maintenance.",
+    "status": "PUBLISH",
+    "authors": ["Steve McConnell"]
+  },
+  {
+    "title": "The Clean Coder: A Code of Conduct for Professional Programmers",
+    "pageCount": 256,
+    "publishedDate": {
+      "date": "2011-05-13T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://m.media-amazon.com/images/I/4192DPXrLJL._SY445_SX342_.jpg",
+    "shortDescription": "The Clean Coder: A Code of Conduct for Professional Programmers",
+    "longDescription": "The Clean Coder describes the journey to professionalism that every software developer must make - from apprentice to journeyman to master.",
+    "status": "DRAFT",
+    "authors": ["Robert C. Martin"]
+  },
+  {
+    "title": "Introduction to Algorithms",
+    "pageCount": 1312,
+    "publishedDate": {
+      "date": "1990-01-01T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://m.media-amazon.com/images/I/41-ilDXINeL.jpg",
+    "shortDescription": "Introduction to Algorithms",
+    "longDescription": "Introduction to Algorithms is a book on computer programming by Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein.",
+    "status": "REMOVED",
+    "authors": [
+      "Thomas H. Cormen",
+      "Charles E. Leiserson",
+      "Ronald L. Rivest",
+      "Clifford Stein"
+    ]
+  }
+]
