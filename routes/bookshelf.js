@@ -12,9 +12,13 @@ router.get('/', bookControllers.getAll);
 
 router.get('/:bookId', bookControllers.getById);
 
-router.post('/', validateBody(bookSchema), bookControllers.create);
+router.post('/', validateBody(bookSchema.bookSchema), bookControllers.create);
 
-router.put('/:bookId', validateBody(bookSchema), bookControllers.update);
+router.put(
+  '/:bookId',
+  validateBody(bookSchema.bookSchema),
+  bookControllers.update
+);
 
 router.delete('/:bookId', bookControllers.remove);
 

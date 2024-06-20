@@ -56,4 +56,4 @@ const bookSchema = Joi.object({
   }),
 });
 
-module.exports = bookSchema;
+module.exports = { bookSchema };
