@@ -26,12 +26,13 @@ enhance the management of your personal library seamlessly.
 
 # How to Run the Project
 
-Simply type in the [link](https://alessioitaliano.github.io/ape-nft/), and let
+Simply type in the [link](https://bookshelf-backend-wmjf.onrender.com), and let
 the magic unfold.
 
 # Used technologies
 
 This project was bootstrapped with
+
 [![Node.js](https://img.shields.io/badge/node.js-%2343853D.svg?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/express-%23404d59.svg?style=for-the-badge)](https://expressjs.com/)
 [![Mongoose](https://img.shields.io/badge/mongoose-%23880000.svg?style=for-the-badge&logo=mongoose)](https://mongoosejs.com/)

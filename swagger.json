@@ -1,0 +1,327 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "version": "1.0.1",
+    "title": "bookshelf-backend",
+    "description": "This repository hosts the backend component of a website aimed at efficiently organizing your personal home library. Its key objectives include managing book counts, providing structured viewing for easy browsing, offering comprehensive book details, and enabling effortless addition and editing of books."
+  },
+  "consumes": ["application/json", "multipart/form-data"],
+  "produces": ["application/json", "multipart/form-data"],
+  "servers": [
+    {
+      "url": "http://localhost:8000"
+    },
+    {
+      "url": "https://bookshelf-backend-wmjf.onrender.com"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Bookshelf",
+      "description": "Books endpoints"
+    }
+  ],
+  "paths": {
+    "/books": {
+      "get": {
+        "summary": "Get all books",
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Book"
+                  }
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "post": {
+        "summary": "Create a new book",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewBook"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Book created successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Book"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Validation error"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    },
+    "/books/{bookId}": {
+      "get": {
+        "summary": "Get a book by ID",
+        "parameters": [
+          {
+            "name": "bookId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "ID of the book to get"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Book"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Book not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "put": {
+        "summary": "Update a book by ID",
+        "parameters": [
+          {
+            "name": "bookId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "ID of the book to update"
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/BookUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Book updated successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Book"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Validation error"
+          },
+          "404": {
+            "description": "Book not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete a book by ID",
+        "parameters": [
+          {
+            "name": "bookId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "ID of the book to delete"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Book deleted successfully"
+          },
+          "404": {
+            "description": "Book not found"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Book": {
+        "type": "object",
+        "properties": {
+          "_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "pageCount": {
+            "type": "integer"
+          },
+          "publishedDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "thumbnailUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "shortDescription": {
+            "type": "string"
+          },
+          "longDescription": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["PUBLISH", "DRAFT", "REMOVED"]
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "example": {
+          "_id": "60d3f58b6ea85e3f18b2db9a",
+          "title": "Sample Book",
+          "pageCount": 250,
+          "publishedDate": "2023-01-01T00:00:00Z",
+          "thumbnailUrl": "https://example.com/thumbnail.jpg",
+          "shortDescription": "A sample book short description.",
+          "longDescription": "A sample book long description.",
+          "status": "PUBLISH",
+          "authors": ["John Doe", "Jane Smith"]
+        }
+      },
+      "NewBook": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "pageCount": {
+            "type": "integer"
+          },
+          "publishedDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "thumbnailUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "shortDescription": {
+            "type": "string"
+          },
+          "longDescription": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["PUBLISH", "DRAFT", "REMOVED"]
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "example": {
+          "title": "New Book",
+          "pageCount": 300,
+          "publishedDate": "2024-01-01",
+          "thumbnailUrl": "https://example.com/new-thumbnail.jpg",
+          "shortDescription": "A new book short description.",
+          "longDescription": "A new book long description.",
+          "status": "DRAFT",
+          "authors": ["John Doe"]
+        }
+      },
+      "BookUpdate": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "pageCount": {
+            "type": "integer"
+          },
+          "publishedDate": {
+            "type": "string",
+            "format": "date"
+          },
+          "thumbnailUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "shortDescription": {
+            "type": "string"
+          },
+          "longDescription": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": ["PUBLISH", "DRAFT", "REMOVED"]
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "example": {
+          "title": "Updated Book Title",
+          "pageCount": 350,
+          "publishedDate": "2024-06-01",
+          "thumbnailUrl": "https://example.com/updated-thumbnail.jpg",
+          "shortDescription": "An updated book short description.",
+          "longDescription": "An updated book long description.",
+          "status": "PUBLISH",
+          "authors": ["John Doe", "Jane Smith"]
+        }
+      }
+    }
+  }
+}
