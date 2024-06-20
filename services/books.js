@@ -31,12 +31,12 @@ const createBook = async body => {
   const newBook = {
     title: body.title,
     pageCount: body.pageCount,
-    // publishedDate: body.publishedDate,
-    // thumbnailUrl: body.thumbnailUrl,
+    publishedDate: body.publishedDate,
+    thumbnailUrl: body.thumbnailUrl,
     shortDescription: body.shortDescription,
     longDescription: body.longDescription,
-    // status: body.status,
-    // authors: body.authors,
+    status: body.status,
+    authors: body.authors,
   };
 
   const result = await Book.create(newBook);

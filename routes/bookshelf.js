@@ -2,9 +2,9 @@ const express = require('express');
 
 const { bookControllers } = require('../controllers');
 
-// const { validateBody } = require('../middlewares');
+const { validateBody } = require('../middlewares');
 
-// const { bookSchemas } = require('../schemas');
+const { bookSchema } = require('../schemas');
 
 const router = express.Router();
 
@@ -12,11 +12,9 @@ router.get('/', bookControllers.getAll);
 
 router.get('/:bookId', bookControllers.getById);
 
-router.post('/', bookControllers.create);
+router.post('/', validateBody(bookSchema), bookControllers.create);
 
-// router.post('/', validateBody(bookSchemas), bookControllers.create);
-
-// router.put('/:bookId', validateBody(bookSchemas), bookControllers.update);
+router.put('/:bookId', validateBody(bookSchema), bookControllers.update);
 
 router.delete('/:bookId', bookControllers.remove);
 
