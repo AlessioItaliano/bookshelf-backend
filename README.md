@@ -27,7 +27,8 @@ enhance the management of your personal library seamlessly.
 # How to Run the Project
 
 Simply type in the [link](https://bookshelf-backend-wmjf.onrender.com), and let
-the magic unfold.
+the magic unfold. To ensure correct operation, please review the
+[Swagger documentation ](https://bookshelf-backend-wmjf.onrender.com/docs)
 
 # Used technologies
 
